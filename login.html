@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log in</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background-color:#d0e4fe;
+      height: 100%;
+    }
+    h1 {
+      color:orange;
+      text-align:center;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 60px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .login-wrapper {
+      background-color: #fff;
+      width: 358px;
+      height: 588px;
+      border-radius: 15px;
+      padding: 0 50px;
+    }
+    .header {
+      font-size: 38px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 200px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .input-item {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      border: 0;
+      padding: 10px;
+      border-bottom: 1px solid rgb(128, 125, 125);
+      font-size: 15px;
+      outline: none;
+    }
+    ::placeholder {
+      text-transform: uppercase;
+    }
+    .btn {
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      margin-top: 40px;
+      border-radius: 20px;
+      background-color:orange;
+      color: #fff;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .msg {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .msg a {
+      color: #abc1ee;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    .msg a:hover {
+      text-decoration: underline;
+    }
+    a {
+      text-decoration-line: none;
+      color: #abc1ee;
+    }
+  </style>
+</head>
+<body>
+<h1>Welcome！</h1>
+<div class="container">
+  <div class="login-wrapper">
+    <div class="header">Login</div>
+    <div class="form-wrapper">
+      <input type="text" name="username" placeholder="username" class="input-item">
+      <input type="password" name="password" placeholder="password" class="input-item">
+      <button class="btn" onclick="login()">Click To Login</button>
+    </div>
+    <div class="msg">
+      <a href="#">忘记密码？</a> |
+      <a href="#">注册新账号</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function login() {
+    alert("登录成功！");
+  }
+</script>
+</body>
+</html>
+
+
+
